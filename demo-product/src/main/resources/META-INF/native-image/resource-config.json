@@ -5,7 +5,10 @@
         "pattern": ".*/ZoneInfoMap$"
       },
       {
-        "pattern": ".*/org/joda/time/tz/data/*$"
+        "pattern": ".*/org/joda/time/tz/data/.*$"
+      },
+      {
+        "pattern": ".*/org/joda/time/tz/data/Asia/.*$"
       }
     ]
   },
