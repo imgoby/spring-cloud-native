@@ -1,0 +1,10 @@
+{
+  "resources": {
+    "includes": [
+    ]
+  },
+  "bundles": [
+    {"name":"org.joda.time.tz.data.ZoneInfoMap"}
+  ]
+}
+
