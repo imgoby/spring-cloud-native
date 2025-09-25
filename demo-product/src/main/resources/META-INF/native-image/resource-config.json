@@ -1,14 +1,45 @@
 {
   "resources": {
     "includes": [
-      {
-        "pattern": ".*/ZoneInfoMap$"
-      },
+
       {
         "pattern": ".*/org/joda/time/tz/data/.*$"
       },
       {
+        "pattern": ".*/org/joda/time/tz/data/ZoneInfoMap$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Africa/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/America/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Antarctica/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Arctic/.*$"
+      },
+	  {
         "pattern": ".*/org/joda/time/tz/data/Asia/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Atlantic/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Australia/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Etc/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Europe/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Indian/.*$"
+      },
+	  {
+        "pattern": ".*/org/joda/time/tz/data/Pacific/.*$"
       }
     ]
   },
