@@ -8,17 +8,8 @@
         <version>3.5.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>id.my.hendisantika</groupId>
-    <artifactId>product-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>demo-product</artifactId>
     <name>product-service</name>
-    <description>product-service</description>
-    <properties>
-        <java.version>23</java.version>
-        <sonar.projectKey>hendisantika_sample-spring-cloud-consul</sonar.projectKey>
-        <sonar.organization>hendisantika</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -42,24 +33,6 @@
             <artifactId>micrometer-tracing-bridge-otel</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.testcontainers</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>1.21.3</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testcontainers</groupId>
-            <artifactId>consul</artifactId>
-            <version>1.21.3</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
@@ -70,11 +43,6 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
