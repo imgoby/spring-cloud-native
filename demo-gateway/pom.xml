@@ -10,9 +10,11 @@
     </parent>
 
     <artifactId>demo-gateway</artifactId>
-    <properties>
 
+    <properties>
+        <native-maven-plugin.version>0.9.28</native-maven-plugin.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
