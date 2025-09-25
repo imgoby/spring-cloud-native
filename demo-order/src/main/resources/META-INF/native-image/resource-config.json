@@ -3,6 +3,9 @@
     "includes": [
       {
         "pattern": ".*/ZoneInfoMap$"
+      },
+      {
+        "pattern": ".*/org/joda/time/tz/data/*$"
       }
     ]
   },
