@@ -3,6 +3,7 @@ package com.goby.demo.order.client;
 import com.goby.demo.order.model.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
@@ -22,4 +23,7 @@ public interface ProductClient {
 
     @PostMapping("/products/ids")
     List<Product> findByIds(List<Long> ids);
+
+    @GetMapping("/products")
+    List<Product> getById(Long id);
 }

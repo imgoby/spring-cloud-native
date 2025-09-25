@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Created by IntelliJ IDEA.
@@ -29,6 +32,10 @@ public class OrderController {
 
     private final ProductClient productClient;
 
+    @Autowired
+    @LoadBalanced
+    private RestTemplate restTemplate;
+
     @GetMapping("/orders/test")
     public List<Product> test() throws JsonProcessingException {
         int price = 0;
@@ -36,6 +43,12 @@ public class OrderController {
         ids.add(1L);
         List<Product> products = productClient.findByIds(ids);
         return products;
+    }
+
+    @GetMapping("/orders/test2")
+    public String test2()  {
+        String resultText = restTemplate.getForObject("http://product-service/products/1", String.class);
+        return resultText;
     }
 
 }
